@@ -1,0 +1,45 @@
+@font-face {
+   font-family: Oswald;
+   src: url('Fontes/Oswald-VariableFont_wght.ttf');
+}
+
+body {
+	background-image: url('Imagens/background.jpg');
+	font-family: "Lucida Console", Courier;
+	color: #3A564A;
+}
+
+b {
+	color: #4D6D5E;
+}
+
+button {
+	background: #568052;
+    border: 2px solid #568052;
+    border-radius: 4px;
+    color: #FFFED7;
+}
+
+input {
+	border: 1px solid #3A564A;
+	border-radius: 4px;
+}
+
+.caxa {
+	background: rgba(255, 255, 255, 0.5);
+	padding: .8vw;
+	padding-left: 2vw;
+    padding-top: 1.5vw;
+	margin: 1vw;
+	border-radius: 1vw;
+}
+
+.cabecalho {
+	display: flex;
+	align-items: center;
+    flex-direction: column;
+}
+
+.titulo {
+	font-family: Oswald;
+}

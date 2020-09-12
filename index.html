@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Minha apresentação</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="mystyle.css">
+	</head>
+
+	<body>
+		<div class="cabecalho">
+			<h1 class="titulo">Minha apresentação em programação web</h1>
+			<h2 class="titulo">Lucas Antonio Martins</h2>
+			<img src="Imagens/eu.jpg" height="100" width="100" style="margin: 5px; border-radius: 50%">
+
+			Olá, meu nome é <b>Lucas</b> e sou aluno de <b>Sistemas de Informação</b>
+			<br>
+			<br>
+			<b>E-mail: </b>fairytail_kuca@hotmail.com
+			<br>
+			<br>
+		</div>
+
+		<div class="caxa">
+			<b>Hobby</b>
+  			<input type="text" id="hobby">
+  			<button onclick="inserirElemento('lista-hobby', 'hobby')">Enviar</button><br>
+
+  			<ul id="lista-hobby">
+  				<li>Jogar MMORPG</li>
+  				<li>Programar</li>
+  				<li>Sair com amigos e com a namorada</li>
+			</ul>
+		</div>
+
+		<div class="caxa">
+			<b>Dúvidas</b>
+  			<input type="text" id="duvidas">
+  			<button onclick="inserirElemento('lista-duvidas', 'duvidas')">Enviar</button><br>
+
+  			<ul id="lista-duvidas">
+  				<li>Como adicionar elementos ao DOM?</li>
+			</ul>
+		</div>
+
+		<center><img src="Imagens/link.gif" width="250px"></center>
+
+		<script type="text/javascript">
+			function inserirElemento(lista, texto) {
+				var nodo = document.createElement('LI');
+				var textoInput = document.getElementById(texto).value;
+				var nodoTexto = document.createTextNode(textoInput);
+				nodo.appendChild(nodoTexto);
+				document.getElementById(lista).appendChild(nodo);
+				document.getElementById(texto).value = "";
+			}
+		</script>
+	</body>
+</html>
